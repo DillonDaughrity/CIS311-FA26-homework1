@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-    outline: 1px solid cornflowerblue;
-    background-color: black;
+    background-color: hsl(228, 99%, 58%);
     color: white;
+    font-family: "Inter", sans-serif;
 }
 
 html, body {
@@ -22,14 +22,22 @@ html, body {
 }
 
 header {
+    padding: 12px 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 0;
+}
+
+header a {
+    text-decoration: none;
 }
 
 main {
     display: flex;
     flex-grow: 1;
+    border-top: 1px solid hsl(220, 100%, 64%);
+    border-bottom: 1px solid hsl(220, 100%, 64%);
 }
 
 main .left {
@@ -37,6 +45,16 @@ main .left {
     flex-direction: column;
     justify-content: center;
     width: 45%;
+}
+
+.left h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.left p {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 main .right {
@@ -50,11 +68,36 @@ main .right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    outline: 1px solid hsl(220, 100%, 64%);
 }
 
 .stat-top {
+    padding-inline: 15px;
     display: flex;
     justify-content: space-between;
+}
+
+.stat-top img {
+    width: 30px;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.stat-bottom {
+    padding-left: 15px;
+}
+
+.stat-bottom h2 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.stat-bottom p {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 footer {
@@ -62,4 +105,10 @@ footer {
     justify-content: space-between;
     padding: 12px 24px;
     flex-grow: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
 }
