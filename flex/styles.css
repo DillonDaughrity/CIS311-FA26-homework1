@@ -36,16 +36,12 @@ header :has(#nav-menu:popover-open) .close-button {
   border: none;
   min-height: 100vh;
   margin-top: 3rem;
-
-  transform: translateX(100%);
-  transition: all 0.25s ease;
-}
-
-#nav-menu:popover-open {
-  transform: translateX(0);
 }
 
 #nav-menu ul {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: right;
   display: flex;
   margin: 0;
   padding: 5rem 1.5rem 1.5rem;
@@ -53,6 +49,10 @@ header :has(#nav-menu:popover-open) .close-button {
   gap: 1rem;
   list-style: none;
   width: 300px;
+}
+
+#nav-menu ul li a:hover {
+  text-decoration: underline;
 }
 
 #nav-menu::backdrop {
@@ -67,6 +67,8 @@ header :has(#nav-menu:popover-open) .close-button {
 }
 
 header {
+  position: sticky;
+  top: 0;
   height: 3rem;
   padding: 12px 24px;
   display: flex;
@@ -91,6 +93,8 @@ main .left {
   flex-direction: column;
   justify-content: center;
   width: 45%;
+  padding-left: 3vw;
+  padding-right: 13vw;
 }
 
 .left h1 {
@@ -101,6 +105,7 @@ main .left {
 .left p {
   font-size: 14px;
   font-weight: 300;
+  line-height: 2;
 }
 
 main .right {
@@ -118,7 +123,7 @@ main .right {
 }
 
 .stat-top {
-  padding-inline: 15px;
+  padding-inline: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -133,7 +138,8 @@ main .right {
 }
 
 .stat-bottom {
-  padding-left: 15px;
+  padding-inline: 8px;
+  padding-bottom: 1rem;
 }
 
 .stat-bottom h2 {
@@ -157,4 +163,50 @@ footer {
 
 footer a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  #nav-menu {
+    width: 100%;
+    min-height: auto;
+    height: 400px;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-inline: 24vw;
+  }
+   
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .left {
+    padding-inline: 2rem;
+    width: 100%;
+    height: 70vh;
+  }
+
+  main .right {
+    width: 100%;
+  }
+
+  .stat-box {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .stat-bottom h2 {
+    font-size: 3rem;
+  }
+
+  .stat-bottom p {
+    font-size: 1rem;
+  }
 }
