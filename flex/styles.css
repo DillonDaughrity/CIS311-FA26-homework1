@@ -204,11 +204,10 @@ footer a {
     min-height: auto;
     height: 400px;
     left: 0;
-    justify-content: center;
+    justify-items: center;
     text-align: center;
     font-weight: 500;
     font-size: 2rem;
-    padding-inline: 24vw;
   }
    
   main {
@@ -245,5 +244,11 @@ footer a {
 
   .stat-bottom p {
     font-size: 1rem;
+  }
+
+  footer {
+    padding-block: 2rem;
+    flex-direction: column;
+    gap: 8px;
   }
 }
