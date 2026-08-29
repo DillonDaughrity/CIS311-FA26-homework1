@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  background-color: hsl(228, 99%, 58%);
   color: white;
   font-family: "Inter", sans-serif;
 }
@@ -10,10 +9,21 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: hsl(228, 99%, 58%);
+}
+
+body header {
+  background-color: hsl(228, 99%, 58%);
+}
+
+body #nav-menu {
+  background-color: hsl(228, 99%, 58%);
 }
 
 .hamburger-button {
   cursor: pointer;
+  background-color: hsl(228, 99%, 58%);
+  border: 0;
 }
 
 header :has(#nav-menu:popover-open) .hamburger-button {
@@ -23,25 +33,35 @@ header :has(#nav-menu:popover-open) .hamburger-button {
 .close-button {
   cursor: pointer;
   display: none;
+  background-color: hsl(228, 99%, 58%);
+  border: 0;
 }
 
 header :has(#nav-menu:popover-open) .close-button {
   display: block;
 }
 
+.circle {
+  height: 1px;
+  width: 1px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
 #nav-menu {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: right;
   position: fixed;
   left: auto;
   right: 0;
   border: none;
   min-height: 100vh;
   margin-top: 3rem;
+  min-width: 28vw;
 }
 
 #nav-menu ul {
-  font-weight: 600;
-  font-size: 3rem;
-  text-align: right;
   display: flex;
   margin: 0;
   padding: 5rem 1.5rem 1.5rem;
@@ -75,6 +95,13 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-grow: 0;
+  border-bottom: 1px solid hsl(220, 100%, 64%);
+}
+
+header span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 header a {
@@ -84,8 +111,6 @@ header a {
 main {
   display: flex;
   flex-grow: 1;
-  border-top: 1px solid hsl(220, 100%, 64%);
-  border-bottom: 1px solid hsl(220, 100%, 64%);
 }
 
 main .left {
@@ -95,6 +120,8 @@ main .left {
   width: 45%;
   padding-left: 3vw;
   padding-right: 13vw;
+  border-right: 1px solid hsl(220, 100%, 64%);
+  border-bottom: 1px solid hsl(220, 100%, 64%);;
 }
 
 .left h1 {
@@ -119,7 +146,13 @@ main .right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  outline: 1px solid hsl(220, 100%, 64%);
+  border-right: 1px solid hsl(220, 100%, 64%);
+  border-bottom: 1px solid hsl(220, 100%, 64%);
+}
+
+.stat-box:hover {
+  cursor: pointer;
+  background-color: hsl(228, 100%, 60%);
 }
 
 .stat-top {
@@ -196,6 +229,10 @@ footer a {
   .stat-box {
     width: 100%;
     height: 70vh;
+  }
+
+  .stat-top img {
+    width: 45px;
   }
 
   .number {
