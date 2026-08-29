@@ -1,3 +1,8 @@
+
+# [Flex Version](https://dillondaughrity.github.io/CIS311-FA26-homework1/flex)
+
+# [Grid Version](https://dillondaughrity.github.io/CIS311-FA26-homework1/grid)
+
 # Frontend Mentor - Grid landing page
 
 ![Design preview for the Grid landing page coding challenge](./preview.jpg)
