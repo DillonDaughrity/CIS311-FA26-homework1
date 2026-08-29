@@ -1,5 +1,5 @@
 
-# [Flex Version:](https://dillondaughrity.github.io/CIS311-FA26-homework1/flex)
+# [Flex Version](https://dillondaughrity.github.io/CIS311-FA26-homework1/flex)
 
 # [Grid Version](https://dillondaughrity.github.io/CIS311-FA26-homework1/grid)
 
