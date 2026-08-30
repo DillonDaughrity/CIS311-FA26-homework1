@@ -217,6 +217,7 @@ footer a {
     padding-inline: 2rem;
     width: 100%;
     height: 70vh;
+    border-right: 0px;
   }
 
   main .right {
@@ -226,6 +227,7 @@ footer a {
   .stat-box {
     width: 100%;
     height: 70vh;
+    border-right: 0px;
   }
 
   .stat-top img {
