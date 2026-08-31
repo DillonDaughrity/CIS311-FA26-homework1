@@ -2,7 +2,6 @@
   box-sizing: border-box;
   color: white;
   font-family: "Inter", sans-serif;
-  /* outline: solid 1px green; */
 }
 
 html,
@@ -22,9 +21,6 @@ body #nav-menu {
 }
 
 .hamburger-button {
-  /* position: absolute;
-  right: 0; 
-  padding-right: 1rem; */
   cursor: pointer;
   background-color: hsl(228, 99%, 58%);
   border: 0;
@@ -35,9 +31,6 @@ header :has(#nav-menu:popover-open) .hamburger-button {
 }
 
 .close-button {
-  /* position: absolute;
-  right: 0;
-  padding-right: 1rem; */
   cursor: pointer;
   display: none;
   background-color: hsl(228, 99%, 58%);
@@ -161,7 +154,6 @@ main .right {
   padding-inline: 1rem;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .stat-top img {
@@ -184,13 +176,13 @@ main .right {
 .stat-bottom h2 {
   font-size: 17px;
   font-weight: 400;
-  line-height: 0;
+  margin-bottom: 4px;
 }
 
 .stat-bottom p {
   font-size: 14px;
   font-weight: 300;
-  line-height: 0;
+  margin-top: 4px;
 }
 
 footer {
@@ -219,6 +211,11 @@ footer p {
     text-align: center;
     font-weight: 500;
   }
+
+  .page {
+    grid-template-rows: 1fr;
+    height: auto;
+  }
    
   main {
     display: grid;
@@ -238,9 +235,13 @@ footer p {
   }
 
   .stat-box {
-    grid-template-rows: 1fr 1fr;
     height: 70vh;
     border-right: 0px;
+  }
+
+  .stat-top {
+    align-items: flex-start;
+    padding-top: 2rem;
   }
 
   .stat-top img {
@@ -249,10 +250,11 @@ footer p {
 
   .number {
     font-size: 2rem;
+    margin-top: 0;
   }
 
   .stat-bottom h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .stat-bottom p {
