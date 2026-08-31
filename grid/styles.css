@@ -88,7 +88,7 @@ header :has(#nav-menu:popover-open) .close-button {
 
 .page {
   display: grid;
-  grid-template-rows: 1fr 18fr 1fr;
+  grid-template-rows: 1fr 11fr 1fr;
   height: 100vh;
 }
 
@@ -147,6 +147,7 @@ main .right {
 
 .stat-box {
   display: grid;
+  grid-template-rows: 3fr 4fr;
   border-right: 1px solid hsl(220, 100%, 64%);
   border-bottom: 1px solid hsl(220, 100%, 64%);
 }
@@ -158,7 +159,9 @@ main .right {
 
 .stat-top {
   padding-inline: 1rem;
-  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 .stat-top img {
@@ -168,31 +171,32 @@ main .right {
 .number {
   font-weight: 400;
   font-size: 2rem;
-  text-align: right;
 }
 
 .stat-bottom {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
   padding-inline: 8px;
   padding-bottom: 1rem;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .stat-bottom h2 {
   font-size: 17px;
   font-weight: 400;
+  line-height: 0;
 }
 
 .stat-bottom p {
   font-size: 14px;
   font-weight: 300;
+  line-height: 0;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  justify-items: center;
+  align-items: center;
   padding: 12px 24px;
   font-weight: 300;
   font-size: 14px;
@@ -257,6 +261,7 @@ footer p {
 
   footer {
     padding-block: 2rem;
+    flex-direction: column;
     gap: 8px;
   }
 }
